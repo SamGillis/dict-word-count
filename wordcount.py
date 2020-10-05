@@ -13,7 +13,8 @@ def word_count(text):
         ##take off any punct
 
         ##add word to dictionary or update value
-    print(words_dict)
+    for each in words_dict:
+        print(f"{each} {words_dict[each]}")
 
 
-word_count('test.txt')
+word_count('twain.txt')
