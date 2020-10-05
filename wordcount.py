@@ -20,7 +20,7 @@ def word_count(text):
 
         ##add word to dictionary or update value
     ##print(sorted(words_dict.values()))
-    sorted_words = sorted(words_dict.items(), key=lambda x: x[1])
+    sorted_words = sorted(words_dict.items(), key=lambda x: x[1], reverse = True)
     for each in sorted_words:
         each = each[0]
         print(f'{each} {words_dict[each]}')
