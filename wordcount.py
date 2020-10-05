@@ -1,3 +1,5 @@
+import string 
+
 # put your code here.
 
 def word_count(text):
@@ -5,6 +7,8 @@ def word_count(text):
     words_dict = {}
     for line in the_file:
         line = line.rstrip()
+        line = line.translate(str.maketrans('', '', string.punctuation))
+        
         list_words = line.split(' ')
 
         ##for each words 
@@ -19,4 +23,4 @@ def word_count(text):
         ##testing configuration
 
 
-word_count('twain.txt')
+word_count('test.txt')
