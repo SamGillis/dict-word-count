@@ -20,8 +20,12 @@ def word_count(text):
 
         ##add word to dictionary or update value
     ##print(sorted(words_dict.values()))
-    for each in sorted(words_dict.keys()):
+    sorted_words = sorted(words_dict.items(), key=lambda x: x[1])
+    for each in sorted_words:
+        each = each[0]
         print(f'{each} {words_dict[each]}')
+    # for each in sorted(words_dict.keys()):
+    #     print(f'{each} {words_dict[each]}')
 
         ##testing configuration
 
