@@ -8,7 +8,12 @@ def word_count(text):
         list_words = line.split(' ')
 
         ##for each words 
-
+        for word in list_words:
+            words_dict[word] = words_dict.get(word, 0) + 1
         ##take off any punct
 
         ##add word to dictionary or update value
+    print(words_dict)
+
+
+word_count('test.txt')
