@@ -1,4 +1,5 @@
 import string 
+import sys
 
 # put your code here.
 
@@ -23,4 +24,4 @@ def word_count(text):
         ##testing configuration
 
 
-word_count('test.txt')
+word_count(sys.argv[1])
