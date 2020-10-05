@@ -16,5 +16,7 @@ def word_count(text):
     for each in words_dict:
         print(f"{each} {words_dict[each]}")
 
+        ##testing configuration
+
 
 word_count('twain.txt')
