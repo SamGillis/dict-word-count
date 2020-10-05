@@ -13,7 +13,7 @@ def word_count(text):
 
         ##for each words 
         for word in list_words:
-            words_dict[word] = words_dict.get(word, 0) + 1
+            words_dict[word.lower()] = words_dict.get(word.lower(), 0) + 1
         ##take off any punct
 
         ##add word to dictionary or update value
